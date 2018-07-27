@@ -1,13 +1,10 @@
 'use strict';
+
 var express = require('express');
 var router = express.Router();
 
-
-var router = require('express').Router();
-
-router.use('/api', require('./api'));
-
+router.get('/', function(req, res, next) {
+    return res.json("{test:this is cardlist}");
+});
 
 module.exports = router;
-
-
